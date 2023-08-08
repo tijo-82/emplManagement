@@ -20,5 +20,5 @@ from emplManagement import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('empl/', include('employees.urls')),
+    path('', include('employees.urls')),
 ]

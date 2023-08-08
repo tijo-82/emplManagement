@@ -5,7 +5,7 @@
     <title>Employee List</title>
 </head>
 <body>
-    <h1>Employee List</h1>
+    <h1>Employee List</h1><a href="{% url 'employeesApp:employee_add' %}" class="purple-btn">Add Employee</a>
     <ul>
         {% for employee in employees %}
         <li>{{ employee.first_name }} {{ employee.last_name }}({{ employee.email }}) - {{ employee.department }} (Salary: {{ employee.salary }})</li>
